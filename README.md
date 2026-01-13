@@ -1,15 +1,19 @@
 # PA-EVIO: Polarity-aided Event-Visual-Inertial Odometry
 
-
 ## Introduction
-Event cameras have received extensive research interest because of their advantages over conventional cameras in high-speed motion and high-dynamic-range (HDR) environments. **PA-EVIO** is a polarity-aided event-visual-inertial odometry system that leverages these advantages by integrating an adaptive time-surface generation module, a robust feature processing module, and a system state estimator. The system is designed to provide accurate and robust state estimation in challenging environments. 
+Event cameras have received extensive research interest because of their advantages over conventional cameras in high-speed motion and high-dynamic-range (HDR) environments. **PA-EVIO** is a polarity-aided event-visual-inertial odometry system that leverages these advantages by integrating an adaptive time-surface generation module, a robust feature processing module, and a system state estimator. The system is designed to provide accurate and robust state estimation in challenging environments.
 
 ### Related Work: 
 This project is an implementation related to our research works:
-1. **(T-IM 2026, Coming soon)** PA-EVIO: Polarity-aided Event-Visual-Inertial Odometry with Adaptive Event Representation 
+1. **(T-IM 2026)** [PA-EVIO: Polarity-aided Event-Visual-Inertial Odometry with Adaptive Event Representation](https://ieeexplore.ieee.org/document/11345289) 
 2. **(IROS 2024)** [Monocular Event-Inertial Odometry with Adaptive decay-based Time Surface and Polarity-aware Tracking](https://ieeexplore.ieee.org/abstract/document/10802605)
 
 ## Features
+
+<p align="center">
+<img src="./.assets/fig_overview.png" width="60%" height="auto">
+</p>
+
 - **Polarity-aided Tracking**: Effectively utilizes event polarity to enhance feature tracking robustness.
 - **Adaptive Time Surface**: Employs an adaptive decay strategy for optimal event representation.
 - **Robust State Estimation**: Supports optimization of event, visual, and inertial measurements in V-I, E-I, and E-V-I configurations.
@@ -53,9 +57,20 @@ Configuration files are organized as follows:
 ./scripts/1run_script_davis240c.sh
 ```
 
-
-
 ## Citation
+
+```bib
+@article{pa-evio2026tang,
+  author={Tang, Kai and Lang, Xiaolei and Ma, Yukai and Huang, Yuehao and Gu, Yaqing and Li, Laijian and Ren, Jie and Liu, Yong and Lv, Jiajun},
+  journal={IEEE Transactions on Instrumentation and Measurement}, 
+  title={PA-EVIO: Polarity-aided Event-Visual-Inertial Odometry with Adaptive Event Representation}, 
+  year={2026},
+  volume={},
+  number={},
+  pages={1-1},
+  keywords={Cameras;Odometry;Tracking;Accuracy;Visualization;Event detection;Robustness;Kernel;Simultaneous localization and mapping;Visual odometry;Event Camera;Sensor Fusion;State Estimation;Time-Surface;Visual-Inertial Odometry},
+  doi={10.1109/TIM.2026.3652739}}
+```
 
 ```bib
 @inproceedings{meio2024tang,
